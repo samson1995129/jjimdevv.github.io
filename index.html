@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>James Anthony Dollente - Senior Full-Stack Engineer</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            /* Global Typography Improvements */
+            body {
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.7;
+                color: #2c3e50;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            
+            /* Banner Section Typography */
+            .banner_content h3 {
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                letter-spacing: 3px;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #007bff;
+                margin-bottom: 15px;
+            }
+            .banner_content h2 {
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-size: 52px;
+                line-height: 1.15;
+                color: #1a1a1a;
+                margin-bottom: 20px;
+                letter-spacing: -0.5px;
+            }
+            .banner_content h4 {
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.5;
+                color: #5a6c7d;
+                margin-bottom: 25px;
+                letter-spacing: 0.3px;
+            }
+            .banner_content p {
+                font-size: 17px;
+                line-height: 1.8;
+                color: #4a5568;
+                font-weight: 400;
+                letter-spacing: 0.2px;
+            }
+            
+            /* Welcome/About Section Typography */
+            .welcome_text h4 {
+                font-family: 'Inter', sans-serif;
+                font-size: 32px;
+                font-weight: 600;
+                color: #1a1a1a;
+                margin-bottom: 20px;
+                letter-spacing: -0.3px;
+                line-height: 1.3;
+            }
+            .welcome_text p {
+                font-size: 17px;
+                line-height: 1.85;
+                color: #4a5568;
+                font-weight: 400;
+                letter-spacing: 0.1px;
+            }
+            .wel_item h4 {
+                font-size: 36px;
+                font-weight: 700;
+                color: #007bff;
+                margin-bottom: 8px;
+                line-height: 1.2;
+            }
+            .wel_item p {
+                font-size: 15px;
+                color: #6b7280;
+                font-weight: 500;
+                letter-spacing: 0.3px;
+                text-transform: uppercase;
+            }
+            
+            /* Skills Section Typography */
+            .tools_expert h3 {
+                font-family: 'Inter', sans-serif;
+                font-size: 28px;
+                font-weight: 600;
+                color: #1a1a1a;
+                margin-bottom: 30px;
+                letter-spacing: -0.2px;
+            }
+            .skill_item h4 {
+                font-size: 16px;
+                font-weight: 500;
+                color: #2d3748;
+                margin-bottom: 8px;
+                letter-spacing: 0.2px;
+            }
+            .skill_item .counter {
+                font-weight: 600;
+                color: #007bff;
+            }
+            
+            /* Feature/Skills Cards Typography */
+            .main_title h2 {
+                font-family: 'Inter', sans-serif;
+                font-size: 38px;
+                font-weight: 700;
+                color: #1a1a1a;
+                margin-bottom: 15px;
+                letter-spacing: -0.5px;
+                line-height: 1.2;
+            }
+            .main_title p {
+                font-size: 17px;
+                line-height: 1.7;
+                color: #6b7280;
+                font-weight: 400;
+                letter-spacing: 0.1px;
+            }
+            .feature_item h4 {
+                font-family: 'Inter', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                color: #1a1a1a;
+                margin-bottom: 15px;
+                letter-spacing: -0.2px;
+                line-height: 1.3;
+            }
+            .feature_item p {
+                font-size: 15px;
+                line-height: 1.75;
+                color: #5a6c7d;
+                font-weight: 400;
+                letter-spacing: 0.1px;
+            }
+            
+            /* Projects Section Typography */
+            .projects_text h4 {
+                font-family: 'Inter', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.3;
+                letter-spacing: -0.2px;
+            }
+            .projects_text p {
+                font-size: 15px;
+                line-height: 1.7;
+                letter-spacing: 0.1px;
+            }
+            
+            /* Footer Typography */
+            .footer_area {
+                font-family: 'Inter', sans-serif;
+            }
+            .f_widget h3 {
+                font-size: 20px;
+                font-weight: 600;
+                color: #1a1a1a;
+                margin-bottom: 20px;
+                letter-spacing: -0.1px;
+            }
+            .f_widget p {
+                font-size: 15px;
+                line-height: 1.8;
+                color: #6b7280;
+                font-weight: 400;
+                letter-spacing: 0.1px;
+            }
+            .f_widget a {
+                color: #007bff;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+            .f_widget a:hover {
+                color: #0056b3;
+            }
+            
+            /* Navigation Typography */
+            .navbar-nav .nav-link {
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                letter-spacing: 0.3px;
+                color: #2d3748;
+            }
+            
+            /* Buttons Typography */
+            .banner_btn {
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0.8px;
+                text-transform: uppercase;
+                padding: 14px 32px;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+            }
+            
+            /* Section Spacing */
+            .p_120 {
+                padding-top: 120px;
+                padding-bottom: 120px;
+            }
+            
+            /* Better text rendering */
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Inter', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            
+            /* Improved paragraph spacing */
+            p {
+                margin-bottom: 1.2em;
+            }
+            
+            /* Better link styling */
+            a {
+                transition: color 0.3s ease;
+            }
+            
+            /* Responsive Typography */
+            @media (max-width: 768px) {
+                .banner_content h2 {
+                    font-size: 36px;
+                }
+                .banner_content h4 {
+                    font-size: 18px;
+                }
+                .banner_content p {
+                    font-size: 16px;
+                }
+                .main_title h2 {
+                    font-size: 28px;
+                }
+                .welcome_text h4 {
+                    font-size: 26px;
+                }
+            }
+        </style>
+        <style>
+            .projects_item {
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                margin-bottom: 30px;
+            }
+            .projects_item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            }
+            .projects_item img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+            .projects_item:hover img {
+                transform: scale(1.1);
+            }
+            .projects_item::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.8) 100%);
+                opacity: 0.7;
+                transition: opacity 0.3s ease;
+                z-index: 1;
+            }
+            .projects_item:hover::before {
+                opacity: 0.9;
+            }
+            .projects_text {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 25px 20px;
+                z-index: 2;
+                color: #fff;
+                transform: translateY(10px);
+                transition: transform 0.3s ease;
+            }
+            .projects_item:hover .projects_text {
+                transform: translateY(0);
+            }
+            .projects_text h4 {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+                line-height: 1.3;
+            }
+            .projects_text h4 a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            .projects_text h4 a:hover {
+                color: #007bff;
+            }
+            .projects_text p {
+                color: rgba(255,255,255,0.95);
+                font-size: 14px;
+                line-height: 1.6;
+                margin: 0;
+                text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+            <div class="banner_inner">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="home_left_img">
+								<img src="img/banner/Diegp_Tores.jpg" alt="James Anthony Dollente - Senior Full-Stack Engineer" style="max-width: 100%; height: auto;">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="banner_content">
+								<h3>This is me</h3>
+								<h2>James Anthony Dollente</h2>
+								<h4>Senior Full-Stack Engineer</h4>
+								<p>Senior Full-Stack Engineer with 8 years of experience designing and deploying scalable web and mobile development. Adept at problem-solving and delivering robust solutions across technology stack. Proficient in frontend technologies including Angular, React.js, Next.js, and Vue.js and backend frameworks such as Node.js, FastAPI, and SpringBoot. Demonstrated expertise in API integration, database management, and containerization using Docker.</p>
+								<div style="margin-bottom: 20px;">
+									<a class="banner_btn" href="resume.html" style="margin-right: 15px;">View Resume</a>
+									<a class="banner_btn" href="contact.html" style="background: transparent; border: 2px solid #007bff; color: #007bff;">Get In Touch</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>About Myself</h4>
+        					<p>I'm James Anthony Dollente, a Senior Full-Stack Engineer with 8 years of experience designing and deploying scalable web and mobile development. Adept at problem-solving and delivering robust solutions across technology stack. Proficient in frontend technologies including Angular, React.js, Next.js, and Vue.js and backend frameworks such as Node.js, FastAPI, and SpringBoot. Demonstrated expertise in API integration, database management, and containerization using Docker. Extensive experience with AWS, Azure, and GCP for cloud solutions and GraphQL for efficient data fetching. Agile-certified professional with a track record of leading cross-functional teams and mentoring junior developers.</p>
+        					<div class="row">
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-database"></i>
+        								<h4>8+</h4>
+        								<p>Years Experience</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>40+</h4>
+        								<p>Projects Completed</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4>6</h4>
+        								<p>Developers Mentored</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="tools_expert">
+        					<h3>Tools Expertness</h3>
+        					<div class="skill_main">
+								<div class="skill_item">
+									<h4>Angular/React <span class="counter">95</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Node.js/FastAPI <span class="counter">92</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>AWS/Azure/GCP <span class="counter">90</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>PostgreSQL/MongoDB <span class="counter">95</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Docker/GraphQL <span class="counter">90</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================Skills Area =================-->
+        <section class="feature_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Technical Skills & Expertise</h2>
+        			<p>Proficient in modern web technologies, cloud-native development, and backend microservices</p>
+        		</div>
+        		<div class="feature_inner row">
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="fa fa-code"></i>
+        					<h4>Frontend Development</h4>
+        					<p>Angular, React.js, Next.js, Vue.js, HTML5, CSS3, Tailwind CSS - Building responsive and performant user interfaces with modern JavaScript frameworks.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="fa fa-server"></i>
+        					<h4>Backend Development</h4>
+        					<p>Node.js, Express.js, FastAPI, SpringBoot, Django, RESTful APIs, GraphQL - Creating scalable REST APIs and server-side applications with microservices architecture.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="fa fa-database"></i>
+        					<h4>Database Management</h4>
+        					<p>PostgreSQL, MySQL, MongoDB, Firebase, Supabase - Designing and optimizing database schemas for high-performance applications with caching strategies.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="fa fa-cloud"></i>
+        					<h4>Cloud & DevOps</h4>
+        					<p>AWS (Amplify, EC2, S3), Azure, GCP, Vercel, Docker, CI/CD (GitHub Actions), Jenkins - Deploying and managing applications in cloud environments with CI/CD pipelines.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="fa fa-check-circle"></i>
+        					<h4>Testing & Quality</h4>
+        					<p>Jest, React Testing Library, Cypress - Ensuring code quality and reliability through comprehensive unit and integration testing strategies.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="fa fa-cogs"></i>
+        					<h4>Development Tools</h4>
+        					<p>Git, Jira, Confluence, Figma, Linux - Collaborating effectively with cross-functional teams using industry-standard tools and methodologies.</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Skills Area =================-->
+        
+        <!--================Projects Area =================-->
+        <section class="projects_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+					<h2>Selected Projects</h2>
+					<p>High-impact projects showcasing expertise in full-stack development, cloud infrastructure, and scalable solutions</p>
+				</div>
+				<div class="projects_inner row">
+					<div class="col-lg-4 col-sm-6">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/projects-1.jpg" alt="Unified Customer Portal">
+							<div class="projects_text">
+								<h4><a href="portfolio-details.html">E-commerce Platform</a></h4>
+								<p>Led end-to-end development of customer-facing e-commerce platform using React.js, Node.js, and PostgreSQL</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/projects-2.jpg" alt="Loyalty Program Module">
+							<div class="projects_text">
+								<h4><a href="portfolio-details.html">Flight Booking System</a></h4>
+								<p>Built user-friendly interface using Angular and NgRx, leading to 30% increase in user engagement with RESTful API integration</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/projects-3.jpg" alt="API Performance Optimization">
+							<div class="projects_text">
+								<h4><a href="portfolio-details.html">Real-time Analytics Dashboard</a></h4>
+								<p>Developed responsive admin dashboards with real-time analytics using Chart.js and WebSocket integrations</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/projects-4.jpg" alt="Cloud Security Console">
+							<div class="projects_text">
+								<h4><a href="portfolio-details.html">Payment Gateway Integration</a></h4>
+								<p>Integrated third-party payment gateways (PayPal, Stripe) and shipping APIs, streamlining checkout processes</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/projects-5.jpg" alt="B2B Procurement System">
+							<div class="projects_text">
+								<h4><a href="portfolio-details.html">B2B Procurement System</a></h4>
+								<p>Full-stack solution using Laravel and Vue.js with responsive UI and optimized MySQL database schemas</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/projects-6.jpg" alt="Document Management System">
+							<div class="projects_text">
+								<h4><a href="portfolio-details.html">Component Library</a></h4>
+								<p>Developed reusable component libraries with Storybook, accelerating UI development by 40%</p>
+							</div>
+						</div>
+					</div>
+				</div>
+        	</div>
+        </section>
+        <!--================End Projects Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>Senior Full-Stack Engineer with 8 years of experience designing and deploying scalable web and mobile development. Proficient in Angular, React.js, Next.js, Vue.js, Node.js, FastAPI, and SpringBoot with extensive cloud experience in AWS, Azure, and GCP.</p>
+        					<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> James Anthony Dollente. All rights reserved.</p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="mailto:jjimdev@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <!--gmaps Js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+        <script src="js/gmaps.min.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
